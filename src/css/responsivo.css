@@ -1,0 +1,13 @@
+@media (max-width:580px){
+    .conteudo-principal{
+        width:80%;
+    }
+ 
+    label, header{
+        font-size:1.2em;
+    }
+
+    .selecione{
+        max-width:150px;
+    }
+}

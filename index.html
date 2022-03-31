@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "src/css/style.css" rel = "stylesheet">
+    <link href = "src/css/responsivo.css" rel = "stylesheet">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    
+<main class="conteudo-principal">
+  <header class="page-title">Conversor de moedas</header>
+
+    <form class="tipsForm" id = "tipsForm">
+    
+    <div class="escolhaConversao">
+        <label for = "tipoConversao">Qual conversão você quer?</label> <br>
+        <select name = "tipoConversao" id = "tipoConversao" class = "selecione" required >
+            <option disabled selected value = "0"> -- Escolha a conversão --</option>
+            <option value = "1">Real para dólar</option>
+            <option value = "2">Dólar para real </option>
+            <option value = "3">Real para euro</option>
+            <option value = "4">Euro para real</option>
+            <option value = "5">Dólar para euro</option>
+            <option value = "6">Euro para dólar</option>
+        </select>
+    </div>
+
+    <div class="valorEmReal">
+      <label for="moeda">Insira o valor</label> <br>
+      <input type="number" id="valor" min= 0>
+
+      <div class="botaoConverter">
+          <button class = "botao" type = "submit">Converter</button>
+      </div>
+
+      <div class="convertendoRealParaOutras">
+        <h2 id = "valorConvertido"></h2>
+      </div>
+
+    </div>
+    
+</form>
+  </main> 
+    
+    
+    <script src = "src/js/index.js"></script>
+</body>
+</html>
